@@ -1,0 +1,172 @@
+{
+  "_notice": "ACs du parcours SCN2D, BUT MMI2. Codes vérifiés contre 5 sources institutionnelles concordantes (IUT Troyes, IUT Haguenau, MMI Bordeaux, Genially référentiel officiel, PN MMI 2022). Couverture complète : 17/17 ACs démontrés.",
+  "_url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2023-12/m-tiers-du-multim-dia-et-de-l-internet-30867.pdf",
+  "competences": [
+    {
+      "code": "C1",
+      "intitule": "Comprendre les écosystèmes, les besoins des utilisateurs et le cadre légal",
+      "acs": [
+        {
+          "code": "AC21.01",
+          "intitule": "Analyser la stratégie de communication ou de marketing d'un acteur",
+          "statut": "couvert",
+          "missions": ["campagne-emailing-toesty"],
+          "justification": "Stratégie e-commerce TOESTY : ciblage d'une audience, choix du positionnement de marque (décalé/humoristique), conception de la campagne newsletter — du brief à la livraison.",
+          "niveau": "en cours d'acquisition"
+        },
+        {
+          "code": "AC21.02",
+          "intitule": "Auditer un site web, une marque ou un service (trafic, référencement, positionnement)",
+          "statut": "couvert",
+          "missions": ["identite-norgaard"],
+          "justification": "Benchmark systématique de marques haut de gamme outdoor (Norrøna, Arc'teryx, Patagonia…) : analyse des codes visuels, territoire graphique, positionnement — constitue un audit concurrentiel de marque structuré.",
+          "niveau": "maîtrisé"
+        },
+        {
+          "code": "AC21.03",
+          "intitule": "Traiter des données avec des outils statistiques pour faciliter leur analyse",
+          "statut": "couvert",
+          "missions": ["site-dataviz"],
+          "justification": "Dataset Spotify 400 utilisateurs, 4 types de visualisations statistiques (bar, stacked bar, grouped bar, bubble chart), biais de représentativité identifiés et documentés explicitement dans le livrable.",
+          "niveau": "en cours d'acquisition"
+        },
+        {
+          "code": "AC21.04",
+          "intitule": "Identifier et décrire les parcours clients à partir d'enquêtes terrain",
+          "statut": "couvert",
+          "missions": ["campagne-emailing-toesty"],
+          "justification": "Structure canonique de la newsletter TOESTY (héro → offre promotionnelle → produits → CTA → avantages → footer) = matérialisation planifiée du parcours d'achat : découverte → intérêt → désir → conversion. Chaque section répond à un moment précis du parcours client.",
+          "niveau": "en cours d'acquisition"
+        },
+        {
+          "code": "AC21.05",
+          "intitule": "Cartographier les expériences utilisateur (points de contact, friction, satisfaction)",
+          "statut": "couvert",
+          "missions": ["site-dataviz"],
+          "justification": "Les 4 graphiques du site Spotify cartographient l'expérience d'utilisation par tranche d'âge : satisfaction (bubble chart), préférences Musique/Podcast (stacked bar), genres favoris (grouped bar), répartition (bar). Question analytique formulée en amont = démarche UX research appliquée.",
+          "niveau": "en cours d'acquisition"
+        }
+      ]
+    },
+    {
+      "code": "C2",
+      "intitule": "Concevoir ou co-concevoir une réponse stratégique et opérationnelle",
+      "acs": [
+        {
+          "code": "AC22.01",
+          "intitule": "Produire des recommandations ergonomiques issues de tests utilisateurs",
+          "statut": "couvert",
+          "missions": ["identite-norgaard", "site-dune"],
+          "justification": "Le benchmark NORGAARD analyse les codes ergonomiques visuels des marques référence secteur (lisibilité, hiérarchie, cohérence) pour produire des recommandations de conception. Le cahier des charges formalise ces recommandations de façon transmissible. Site Dune : maquettes d'expérience utilisateur et intégration (complément).",
+          "niveau": "maîtrisé"
+        },
+        {
+          "code": "AC22.02",
+          "intitule": "Co-construire une recommandation stratégique en structurant un plan d'action",
+          "statut": "couvert",
+          "missions": ["dossier-presse-pop-smoke", "plaquette-marsup"],
+          "justification": "Pop Smoke : dossier de presse en 10 sections = recommandation stratégique éditoriale argumentée, plan d'action structuré pour un label ou management d'artiste. Marsup : cycles de validation avec maîtresse de stage = co-construction itérative d'une livrabilité professionnelle.",
+          "niveau": "en cours d'acquisition"
+        },
+        {
+          "code": "AC22.03",
+          "intitule": "Optimiser le référencement d'un site web, d'un produit ou d'un service",
+          "statut": "couvert",
+          "missions": ["site-dataviz", "campagne-emailing-toesty"],
+          "justification": "Dataviz : HTML sémantique (article, section, h1-h3, aria-labels), structure optimisée, aucun framework (performance). TOESTY : configuration Prestashop avec noms produits structurés, descriptions catalogue, URL de boutique accessible sur serveur IUT.",
+          "niveau": "en cours d'acquisition"
+        },
+        {
+          "code": "AC22.04",
+          "intitule": "Mettre en place une présence sur les réseaux sociaux et les médias numériques",
+          "statut": "couvert",
+          "missions": ["dossier-presse-pop-smoke", "plaquette-marsup"],
+          "justification": "Pop Smoke : sections Co-signs médias, Revue de presse et Stats streaming documentent et structurent une stratégie de présence cross-platform. Marsup : plaquettes techniques NOVIUM = outil de communication externe B2B, présence de marque formalisée sur le marché ferroviaire.",
+          "niveau": "en cours d'acquisition"
+        }
+      ]
+    },
+    {
+      "code": "C3",
+      "intitule": "Exprimer un message avec les médias numériques",
+      "acs": [
+        {
+          "code": "AC23.01",
+          "intitule": "Créer, décliner et diffuser une identité visuelle et éditoriale transmédia",
+          "statut": "couvert",
+          "missions": ["campagne-emailing-toesty", "plaquette-marsup", "identite-norgaard", "dossier-presse-pop-smoke"],
+          "justification": "NORGAARD (logotype + charte + documents fonctionnels = identité cohérente de A à Z), TOESTY (DA email + boutique + copywriting = transmédia e-commerce), Pop Smoke (DA InDesign cohérente en 10 sections), Marsup (charte NOVIUM appliquée en contexte professionnel B2B).",
+          "niveau": "maîtrisé"
+        }
+      ]
+    },
+    {
+      "code": "C4",
+      "intitule": "Développer pour le web et les médias numériques",
+      "acs": [
+        {
+          "code": "AC24.01",
+          "intitule": "Intégrer, produire ou développer des interactions riches ou des dispositifs interactifs",
+          "statut": "couvert",
+          "missions": ["site-dataviz", "campagne-emailing-toesty", "site-dune"],
+          "justification": "Dataviz : 4 graphiques Plotly interactifs (bar, stacked bar, grouped bar, bubble), HTML/CSS/JS vanilla, design system complet, responsive. TOESTY : HTML email avec contraintes spécifiques clients (tableaux, inline CSS, reset CSS, media queries embarquées). Site Dune : intégration HTML/CSS sémantique (complément).",
+          "niveau": "maîtrisé"
+        },
+        {
+          "code": "AC24.02",
+          "intitule": "Modéliser les traitements d'une application web",
+          "statut": "couvert",
+          "missions": ["campagne-emailing-toesty"],
+          "justification": "Configuration Prestashop : modélisation du catalogue (produits, déclinaisons coloris, fournisseurs, catégories, prix) = architecture de traitement des données d'une application web e-commerce. Compréhension de la logique CMS et de ses modèles de données.",
+          "niveau": "en cours d'acquisition"
+        },
+        {
+          "code": "AC24.03",
+          "intitule": "Optimiser les applications web en matière de référencement et de temps de chargement",
+          "statut": "couvert",
+          "missions": ["site-dataviz"],
+          "justification": "Code minimal et maîtrisé (112 lignes HTML, 275 CSS, 227 JS), aucune dépendance externe sauf Plotly, variables CSS, responsive sans framework = optimisation délibérée des performances. HTML sémantique et structure de titres améliorent le référencement naturel.",
+          "niveau": "en cours d'acquisition"
+        },
+        {
+          "code": "AC24.04",
+          "intitule": "Configurer une solution d'hébergement adaptée aux besoins",
+          "statut": "couvert",
+          "missions": ["campagne-emailing-toesty"],
+          "justification": "Boutique Prestashop TOESTY déployée et accessible en ligne sur le serveur IUT : configuration du CMS, mise en ligne du catalogue, déploiement de la newsletter sur Mailjet = configuration complète d'une solution d'hébergement e-commerce opérationnelle.",
+          "niveau": "en cours d'acquisition"
+        }
+      ]
+    },
+    {
+      "code": "C5",
+      "intitule": "Entreprendre dans le secteur des industries créatives et des médias",
+      "acs": [
+        {
+          "code": "AC25.01",
+          "intitule": "Gérer un projet avec une méthode d'amélioration continue (méthode agile)",
+          "statut": "couvert",
+          "missions": ["plaquette-marsup"],
+          "justification": "Cycles itératifs de validation avec Marie-Julie Clar (soumission → retours → corrections → revalidation) en contexte professionnel réel — méthode agile appliquée dans une entreprise, pas simulée en SAE.",
+          "niveau": "en cours d'acquisition"
+        },
+        {
+          "code": "AC25.02",
+          "intitule": "Cartographier un écosystème (identification des acteurs, synthèse des propositions de valeur)",
+          "statut": "couvert",
+          "missions": ["plaquette-marsup"],
+          "justification": "Stage NOVIUM : identification et compréhension de l'écosystème B2B ferroviaire (NOVIUM constructeur → opérateurs ferroviaires clients → gestionnaires d'infrastructure → équipes de maintenance). Adapter les plaquettes à chaque audience impliquait de cartographier les acteurs et leurs besoins respectifs.",
+          "niveau": "en cours d'acquisition"
+        },
+        {
+          "code": "AC25.03",
+          "intitule": "Initier la constitution d'un réseau professionnel",
+          "statut": "couvert",
+          "missions": ["plaquette-marsup"],
+          "justification": "8 semaines chez NOVIUM = première immersion dans un réseau professionnel réel. Relation formelle établie avec Marie-Julie Clar (maîtresse de stage). Accord NOVIUM pour présentation des livrables en portfolio = lien professionnel maintenu au-delà du stage.",
+          "niveau": "en cours d'acquisition"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAE 303 - Dataviz</title>
+    
+    <script src="https://cdn.plot.ly/plotly-2.26.0.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <header>
+            <h1>Préférences Spotify</h1>
+            <p class="sous-titre">Analyse des habitudes d'écoute selon l'âge</p>
+            <p class="nom">Timothé Roberjot - Dataviz SAE 303</p>
+        </header>
+
+        <section id="intro">
+            <h2>La Question</h2>
+            <p class="boite-question">
+                Est-ce que l'âge change la façon dont on utilise Spotify (Musique ou Podcast) ?
+            </p>
+            
+            <h3>Contexte de l'étude</h3>
+            <p>
+                J'ai analysé un fichier de données comportant <strong>400 utilisateurs</strong>. 
+                J'ai voulu voir s'il y avait un lien entre l'âge des gens et ce qu'ils écoutent le plus.
+            </p>
+            
+            <div class="grille-stats">
+                <div class="carte-stat">
+                    <h4>400+</h4>
+                    <p>Répondants</p>
+                </div>
+                <div class="carte-stat">
+                    <h4>5</h4>
+                    <p>Tranches d'âge</p>
+                </div>
+                <div class="carte-stat">
+                    <h4>2025</h4>
+                    <p>Année des données</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="partie1">
+            <h2>1. Qui a répondu au sondage ?</h2>
+            <p>Avant d'analyser les goûts, regardons la répartition des âges dans notre base de données.</p>
+            
+            <div class="zone-graphique" id="graphique1"></div>
+            
+            <div class="bloc-analyse">
+                <strong>Analyse :</strong> La grande majorité des personnes interrogées ont entre 20 et 35 ans (296 personnes). 
+                C'est logique car c'est le cœur de cible de l'application.
+                <br>Les enfants (6-12) et les personnes agées (60+) sont très peu présentes.
+            </div>
+        </section>
+
+        <section id="partie2">
+            <h2>2. Musique ou Podcast ?</h2>
+            <p>Voici la répartition des préférences (en pourcentage) pour chaque tranche d'âge.</p>
+            
+            <div class="zone-graphique" id="graphique2"></div>
+            
+            <div class="bloc-analyse">
+                <strong>Observation :</strong> Les jeunes (6-12 ans) sont ceux qui écoutent le plus de podcasts. Nous pouvons également voir que la répartition des 12-20 ans et des 35-60 ans est quasiment la même. (33,8%). 
+                À l'inverse, les adultes de 20 à 35 ans et les plus de 60 ans utilisent Spotify presque uniquement pour la musique.
+            </div>
+        </section>
+
+        <section id="partie3">
+            <h2>3. Quels genres musicaux ?</h2>
+            <p>Regardons quels styles de musique sont les plus écoutés selon l'âge.</p>
+            
+            <div class="zone-graphique" id="graphique3"></div>
+            
+            <div class="bloc-analyse">
+                <strong>Tendance :</strong> Le genre mélodie est numéro 1 partout. On remarque que le rap et l'électronique sont surtout écoutés par les moins de 35 ans. 
+                Les 35-60 ans ont une préférence plus marquée pour le classique que les jeunes.
+            </div>
+        </section>
+
+        <section id="partie4">
+            <h2>4. Satisfaction (Nuage de points)</h2>
+            <p>Y a-t-il un lien entre l'âge et la note de satisfaction donnée à l'application ?</p>
+            
+            <div class="zone-graphique" id="graphique4"></div>
+            
+            <div class="bloc-analyse">
+                <strong>Lecture du graph :</strong> Chaque bulle est un groupe. Plus la bulle est grosse, plus il y a de monde. 
+                On voit que la satisfaction est globalement bonne (entre 3.8 et 4.2 sur 5) peu importe l'âge. 
+                Les utilisateurs de podcasts semblent légèrement plus satisfaits.
+            </div>
+        </section>
+
+        <footer>
+            <p>Réalisé en 2ème année de BUT MMI</p>
+            <p>Données : Spotify_users_data.csv</p>
+            <p>Outils : HTML / CSS / JS (Plotly)</p>
+            <p>Aide annexe : Gemini (pour comprendre les erreurs)</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

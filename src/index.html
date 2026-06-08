@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de compétences de Timothé Roberjot, BUT MMI 2e année (parcours SCN2D). Cinq réalisations analysées par la méthode STAR et leur couverture des apprentissages critiques." />
+  <title>Portfolio — Timothé Roberjot — BUT MMI2</title>
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23faf8f3'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' font-weight='600' text-anchor='middle' fill='%23345470'%3ER%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preload" href="../assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="#introduction">Timothé Roberjot <span>· Portfolio MMI2</span></a>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="#introduction">Introduction</a>
+        <a href="#missions">Réalisations</a>
+        <a href="#tableau-ac">AC &amp; compétences</a>
+        <a href="#complements">Compléments</a>
+        <a href="#bilan">Bilan</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="shell" tabindex="-1">
+
+    <!-- ===================== HERO ===================== -->
+    <section id="introduction" class="hero">
+      <p class="hero__eyebrow">Portfolio de compétences · BUT MMI2 · 2024–2026</p>
+      <h1>Timothé Roberjot</h1>
+      <p class="hero__lead accroche">Étudiant en BUT MMI, parcours Stratégie de communication numérique et design d'expérience, j'ai construit ce portfolio comme une démonstration concrète de mes apprentissages à travers cinq réalisations complémentaires. Du développement web à la communication visuelle, en passant par un contexte professionnel de stage, chaque projet est analysé de façon structurée pour montrer mes choix, mes acquis et mes axes de progression.</p>
+      <p class="hero__sub">BUT MMI 2<sup>e</sup> année &middot; Parcours SCN2D</p>
+
+      <ul class="hero__index" aria-label="Index des réalisations">
+        <li><a href="#mission-dataviz"><span class="num">01</span><span class="label">Visualisation de données Spotify</span><span class="disc">Développement web</span></a></li>
+        <li><a href="#mission-emailing"><span class="num">02</span><span class="label">Newsletter e-commerce TOESTY</span><span class="disc">Email design</span></a></li>
+        <li><a href="#mission-marsup"><span class="num">03</span><span class="label">Plaquettes techniques MARSUP</span><span class="disc">Édition print B2B</span></a></li>
+        <li><a href="#mission-norgaard"><span class="num">04</span><span class="label">Identité de marque NORGAARD</span><span class="disc">Identité de marque</span></a></li>
+        <li><a href="#mission-popsmoke"><span class="num">05</span><span class="label">Dossier de presse Pop Smoke</span><span class="disc">Communication éditoriale</span></a></li>
+      </ul>
+    </section>
+
+    <!-- ===================== RÉALISATIONS ===================== -->
+    <section id="missions" class="section">
+      <div class="section__head">
+        <span class="section__num">Partie 01</span>
+        <h2>Réalisations analysées</h2>
+      </div>
+
+      <div class="missions">
+
+        <!-- Mission 1 : Site de visualisation de données -->
+        <article id="mission-dataviz" class="mission">
+          <div class="mission__rail">
+            <span class="mission__index">01</span>
+            <span class="mission__discipline">Développement web</span>
+            <dl class="mission__meta">
+              <div><dt>Cadre :</dt> <dd>SAE BUT MMI2 | S3, Analyse et exploitation de données</dd></div>
+              <div><dt>Rôle :</dt> <dd>Travail individuel</dd></div>
+            </dl>
+            <ul class="ac-list" aria-label="Apprentissages critiques démontrés">
+              <li><a class="ac-chip" href="#tableau-ac">AC21.03</a></li>
+              <li><a class="ac-chip" href="#tableau-ac">AC24.01</a></li>
+            </ul>
+          </div>
+
+          <div class="mission__body">
+            <h3>Visualisation de données : &laquo;&nbsp;Préférences Spotify selon l'âge&nbsp;&raquo;</h3>
+
+            <div class="star-block">
+              <h4>Le contexte et les enjeux</h4>
+              <p>Dans le cadre d'une SAE d'analyse de données, un dataset de 400 utilisateurs Spotify répartis en cinq tranches d'âge (6-12, 12-20, 20-35, 35-60, 60+) était fourni. La contrainte du brief était ouverte : produire une visualisation dans un support au choix (PDF, vidéo ou site web). Le seul impératif associé au format site : usage obligatoire de Plotly.js.</p>
+            </div>
+
+            <div class="star-block">
+              <h4>Objectifs et contraintes</h4>
+              <p>Transformer ce dataset brut en une narration analytique compréhensible, avec une question centrale à formuler et à documenter visuellement. Liberté totale de thème et de format.</p>
+            </div>
+
+            <div class="star-block">
+              <h4>Stratégie et réalisation</h4>
+              <p>Le format site web a été retenu délibérément : contrairement au PDF figé ou à la vidéo linéaire, un site permet une exploration interactive des données et constitue un livrable plus valorisant pour un portfolio de développement. La question analytique centrale a été posée en amont : <em>&laquo;&nbsp;Est-ce que l'âge change la façon dont on utilise Spotify&nbsp;?&nbsp;&raquo;</em></p>
+              <p>Le projet a démarré sur Looker Studio (outil Google de dataviz), puis a basculé sur Plotly.js sur recommandation de l'enseignant, jugé plus adapté à un rendu site. Plotly.js a donc été appris en autonomie via la documentation officielle, avec recours ciblé à Gemini pour la résolution d'erreurs de configuration uniquement (non pour la génération de code métier). Cet usage de l'IA est déclaré explicitement dans le <code>readme.txt</code> du projet.</p>
+              <p>Quatre types de graphiques distincts ont été implémentés : bar chart (répartition par tranche d'âge), stacked bar chart (préférence Musique vs. Podcast en pourcentage), grouped bar chart (genres musicaux favoris par âge) et bubble chart (satisfaction vs. âge, taille de bulle proportionnelle à la population). Chaque section suit une structure narrative identique : question posée, graphique interactif, analyse textuelle.</p>
+              <p>Le design system s'inscrit dans l'univers Spotify : palette dark mode, vert #1DB954, typographies Poppins (titres) et Inter (corps), responsive à partir de 768px, entièrement construit en variables CSS sans framework.</p>
+              <p>Une limite a été identifiée et assumée : les tranches 6-12 ans et 60+ ne comptent qu'un seul utilisateur chacune, ce qui rend toute interprétation statistiquement non représentative. Cette limite est signalée dans les analyses textuelles du site.</p>
+            </div>
+
+            <div class="star-block">
+              <h4>Bilan et livrables</h4>
+              <p>Site one-page scrollable livré : 112 lignes HTML, 275 lignes CSS, 227 lignes JS, 4 graphiques Plotly interactifs, responsive, readme documenté. Livrable validé lors de la soutenance SAE.</p>
+
+              <div class="deliverable deliverable--embed">
+                <p class="deliverable__lead">Aperçu interactif</p>
+                <div class="frame frame--app">
+                  <div class="frame__bar">
+                    <span class="frame__dots"><span></span><span></span><span></span></span>
+                    <span class="frame__label">Préférences Spotify | visualisation Plotly.js</span>
+                  </div>
+                  <iframe src="../travaux/site_dataviz/index.html" title="Site de visualisation de données Spotify (interactif)" loading="lazy"></iframe>
+                </div>
+                <a class="deliverable__cta" href="../travaux/site_dataviz/index.html" target="_blank" rel="noopener">Ouvrir en plein écran ↗</a>
+                <p class="deliverable__note">Graphiques interactifs (survol, zoom).</p>
+              </div>
+            </div>
+
+            <div class="auto-evaluation">
+              <p class="auto-evaluation__title">Auto-évaluation</p>
+              <div class="eval-item"><span class="niveau niveau--ok">Maîtrisé</span><p>Plotly.js pour quatre types de visualisation distincts&nbsp;; conception d'un design system CSS complet sans framework (variables, hiérarchie typographique, dark mode)&nbsp;; narration de données structurée par question analytique.</p></div>
+              <div class="eval-item"><span class="niveau niveau--ok">Maîtrisé</span><p>Conduite de la démarche analytique : formulation d'une question centrale en amont du traitement des données, documentation assumée des biais de représentativité dans le livrable final.</p></div>
+              <div class="eval-item"><span class="niveau niveau--progress">En cours d'acquisition</span><p>Lecture dynamique de fichiers CSV : les données ont été codées en dur directement dans le JS, contournement fonctionnel mais pas maîtrise de la chaîne de traitement.</p></div>
+              <div class="eval-improve">
+                <p class="eval-improve__title">Axes de progression</p>
+                <p><strong>À améliorer&nbsp;:</strong> la rigueur statistique aurait dû être questionnée en amont lors de la formulation de la question analytique, et non signalée seulement à la livraison.</p>
+                <p><strong>Pistes d'amélioration&nbsp;:</strong> implémenter un <code>fetch()</code> dynamique du CSV pour découpler données et code&nbsp;; documenter les biais de représentativité directement dans l'interface (note de bas de graphique) plutôt que dans le seul texte d'analyse&nbsp;; valider la pertinence de la question analytique sur un dataset équilibré avant de commencer la visualisation.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mission 2 : Campagne e-commerce TOESTY -->
+        <article id="mission-emailing" class="mission">
+          <div class="mission__rail">
+            <span class="mission__index">02</span>
+            <span class="mission__discipline">Email design</span>
+            <dl class="mission__meta">
+              <div><dt>Cadre :</dt> <dd>SAE 401, BUT MMI2</dd></div>
+              <div><dt>Rôle :</dt> <dd>Travail individuel</dd></div>
+            </dl>
+            <ul class="ac-list" aria-label="Apprentissages critiques démontrés">
+              <li><a class="ac-chip" href="#tableau-ac">AC21.01</a></li>
+              <li><a class="ac-chip" href="#tableau-ac">AC23.01</a></li>
+              <li><a class="ac-chip" href="#tableau-ac">AC24.01</a></li>
+            </ul>
+          </div>
+
+          <div class="mission__body">
+            <h3>Campagne e-commerce : Newsletter HTML TOESTY</h3>
+
+            <div class="star-block">
+              <h4>Le brief initial</h4>
+              <p>La SAE 401 portait sur la conception d'un projet e-commerce complet : créer une boutique sur Prestashop (produits, catégories, déclinaisons, fournisseurs) puis concevoir une newsletter HTML email brandée sur Mailjet pour promouvoir l'offre. La marque était au choix. Travail individuel du brief à la livraison.</p>
+            </div>
+
+            <div class="star-block">
+              <h4>Ma mission</h4>
+              <p>Livrer un dispositif e-commerce opérationnel de bout en bout : boutique accessible en ligne sur le serveur IUT et newsletter HTML email conforme aux standards du format, cohérente avec l'identité de la marque.</p>
+            </div>
+
+            <div class="star-block">
+              <h4>Déploiement opérationnel</h4>
+              <p>Le choix de la marque TOESTY (pantoufles au positionnement décalé et humoristique) a été motivé par la liberté qu'il offre sur le copywriting. Un positionnement sérieux aurait contraint le registre&nbsp;; un positionnement décalé permet d'explorer des formulations directes et engageantes sans que cela paraisse incohérent avec la marque.</p>
+              <p>La boutique Prestashop a été configurée : catalogue (pantoufles beiges et marrones, 17,49&nbsp;&euro;), catégories, déclinaisons de coloris. La gestion des déclinaisons produit (coloris, tailles) et la configuration des règles tarifaires ont demandé une prise en main de la logique CMS avant d'être pleinement opérationnelles.</p>
+              <p>La newsletter a été conçue sur Mailjet puis exportée en HTML brut. Ce format impose des contraintes radicalement différentes du HTML web standard : structure entièrement en tableaux (incompatibilité des clients email avec flexbox/grid), styles uniquement en inline CSS (les feuilles de style externes sont ignorées par Gmail, Outlook, Apple Mail), reset CSS global lourd pour neutraliser les défauts des clients, responsive via media queries embarquées dans un bloc <code>&lt;style&gt;</code>. Ces contraintes ne s'apprennent pas par extension du HTML web : elles supposent de comprendre le comportement propre des clients email.</p>
+              <p>La direction artistique suit la palette beige/marron/vert (#1DB954 en accent), ton humoristique maintenu jusqu'au footer. Le copywriting est le levier principal de l'identité de marque : <em>&laquo;&nbsp;Prenez votre pied. Enfin.&nbsp;&raquo;</em>, <em>&laquo;&nbsp;L'expérience sensorielle que vos pieds n'ont jamais osé demander&nbsp;&raquo;</em>, <em>&laquo;&nbsp;Le livreur portera des Toesty&nbsp;&raquo;</em>. La structure canonique e-commerce a été respectée : image héro, section promo (&minus;30&nbsp;%, code toesty30), deux produits en colonne, CTA, trois avantages, footer institutionnel.</p>
+            </div>
+
+            <div class="star-block">
+              <h4>Impact et retour d'expérience</h4>
+              <p>Boutique Prestashop TOESTY accessible en ligne (serveur IUT). Newsletter HTML complète livrée. Compétences validées lors de la soutenance de la SAE 401.</p>
+
+              <div class="deliverable">
+                <p class="deliverable__lead">Newsletter HTML (aperçu)</p>
+                <iframe class="email-frame" src="../travaux/campagne_emailing/newsletter_ecommerce_TOESTY.html" title="Newsletter e-commerce TOESTY" sandbox="allow-same-origin" loading="lazy"></iframe>
+                <a class="deliverable__cta" href="../travaux/campagne_emailing/newsletter_ecommerce_TOESTY.html" target="_blank" rel="noopener">Ouvrir l'email ↗</a>
+              </div>
+            </div>
+
+            <div class="auto-evaluation">
+              <p class="auto-evaluation__title">Auto-évaluation</p>
+              <div class="eval-item"><span class="niveau niveau--ok">Maîtrisé</span><p>HTML email : contraintes spécifiques des clients (tables, inline CSS, reset CSS)&nbsp;; conception d'une identité de marque cohérente du nom au copywriting en passant par la palette.</p></div>
+              <div class="eval-item"><span class="niveau niveau--ok">Maîtrisé</span><p>Stratégie d'acquisition e-commerce : structure canonique de la newsletter orientée conversion (héro &rarr; offre promo &rarr; produits &rarr; CTA &rarr; avantages), copywriting cohérent avec le positionnement décalé de la marque du brief à la livraison.</p></div>
+              <div class="eval-item"><span class="niveau niveau--progress">En cours d'acquisition</span><p>Configuration CMS Prestashop : la logique de catalogue (déclinaisons, fournisseurs, règles de prix) reste à approfondir, notamment la configuration des déclinaisons produit et la gestion des règles tarifaires.</p></div>
+              <div class="eval-improve">
+                <p class="eval-improve__title">Axes de progression</p>
+                <p><strong>À améliorer&nbsp;:</strong> tester le rendu sur plusieurs clients email réels avant livraison.</p>
+                <p><strong>Pistes d'amélioration&nbsp;:</strong> test multi-client systématique (Litmus ou aperçu Mailjet multi-clients) pour valider le rendu avant envoi&nbsp;; exploiter les outils analytics de la boutique Prestashop pour mesurer l'efficacité d'une vraie campagne&nbsp;; versionner le fichier HTML email pour faciliter les itérations futures.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mission 3 : Plaquettes techniques NOVIUM / MARSUP -->
+        <article id="mission-marsup" class="mission">
+          <div class="mission__rail">
+            <span class="mission__index">03</span>
+            <span class="mission__discipline">Édition print B2B</span>
+            <dl class="mission__meta">
+              <div><dt>Cadre :</dt> <dd>Stage 8 semaines | NOVIUM, Saône-et-Loire (71)</dd></div>
+              <div><dt>Période :</dt> <dd>26 janvier &ndash; 20 mars 2026</dd></div>
+              <div><dt>Rôle :</dt> <dd>Travail sous supervision</dd></div>
+            </dl>
+            <ul class="ac-list" aria-label="Apprentissages critiques démontrés">
+              <li><a class="ac-chip" href="#tableau-ac">AC23.01</a></li>
+              <li><a class="ac-chip" href="#tableau-ac">AC25.01</a></li>
+            </ul>
+          </div>
+
+          <div class="mission__body">
+            <h3>Plaquettes techniques catalogue : Stage NOVIUM (MARSUP)</h3>
+
+            <div class="star-block">
+              <h4>Le contexte et les enjeux</h4>
+              <p>NOVIUM est un constructeur d'engins mobiles sur mesure pour les secteurs ferroviaire, défense et engins spéciaux. La mission confiée lors du stage était la refonte des plaquettes techniques du catalogue d'engins : des documents B2B destinés aux opérateurs ferroviaires et gestionnaires d'infrastructure, présentant les caractéristiques techniques et performances de chaque engin. Parmi ces engins, le MARSUP : une nacelle automotrice conçue pour inspecter les ouvrages d'art ferroviaires (ponts, viaducs, tunnels) en circulant sous les voies ferrées, en sécurité. Maîtresse de stage : Marie-Julie Clar.</p>
+            </div>
+
+            <div class="star-block">
+              <h4>Ma mission</h4>
+              <p>Refaire la mise en page des plaquettes techniques dans le respect de la charte graphique NOVIUM, et les livrer dans un état validé par la maîtresse de stage. Chaque document devait être lisible par un professionnel du secteur ferroviaire : clarté, rigueur, hiérarchie de l'information adaptée à une lecture technique B2B.</p>
+            </div>
+
+            <div class="star-block">
+              <h4>Méthode et mise en œuvre</h4>
+              <p>Le premier obstacle n'était pas graphique : je ne connaissais rien au secteur ferroviaire. Avant d'ouvrir InDesign, j'ai dû apprendre le vocabulaire du secteur : comprendre ce que désigne une &laquo;&nbsp;nacelle automotrice&nbsp;&raquo;, distinguer les données de performance des données de sécurité, identifier ce qu'un opérateur ferroviaire cherche dans ce type de document.</p>
+              <p>La mise en page a été réalisée sous InDesign, dans le respect de la charte graphique NOVIUM (documents internes, réseau entreprise). Le travail est parti d'un gabarit InDesign existant fourni par NOVIUM, reprenant les couleurs et typographies de la charte. Les visuels des engins ont été retravaillés sous Photoshop.</p>
+              <p>Le travail s'est organisé en cycles de validation : soumission d'une version à Marie-Julie Clar, retours, corrections, resoumission. Cette itération est propre au contexte professionnel : en SAE, un livrable est souvent rendu une fois&nbsp;; en entreprise, il passe par plusieurs états avant d'être jugé conforme. La principale difficulté a été d'inférer les règles implicites de la charte depuis les documents existants, certaines conventions typographiques et d'espacement n'étant pas entièrement formalisées dans un guide.</p>
+              <p>Les données techniques (dimensions, capacités, certifications, gabarits ferroviaires) étaient fournies par NOVIUM depuis des documents sources internes, puis reformulées et hiérarchisées pour une lecture B2B fluide.</p>
+            </div>
+
+            <div class="star-block">
+              <h4>Bilan et livrables</h4>
+              <p>Plaquettes techniques redesignées, validées, conformes à la charte NOVIUM, dont la plaquette MARSUP. Accord de NOVIUM obtenu pour présentation dans le portfolio. Retour de la maîtresse de stage : design et clarté professionnels. Format A4 recto-verso, trois volets par engin.</p>
+
+              <div class="deliverable deliverable--preview">
+                <p class="deliverable__lead">Plaquette technique (aperçu)</p>
+                <figure class="deliv-figure">
+                  <div class="deliv-pages">
+                    <div class="deliv-media"><img src="../travaux/Plaquette_technique_MARSUP/1.png" alt="Plaquette MARSUP &mdash; page 1" loading="lazy" /></div>
+                    <div class="deliv-media"><img src="../travaux/Plaquette_technique_MARSUP/2.png" alt="Plaquette MARSUP &mdash; page 2" loading="lazy" /></div>
+                    <div class="deliv-media"><img src="../travaux/Plaquette_technique_MARSUP/3.png" alt="Plaquette MARSUP &mdash; page 3" loading="lazy" /></div>
+                  </div>
+                  <figcaption>Plaquette MARSUP : nacelle automotrice d'inspection d'ouvrages d'art ferroviaires.</figcaption>
+                </figure>
+                <a class="deliverable__cta" href="../travaux/Plaquette_technique_MARSUP/Plaquette_technique_MARSUP.pdf" target="_blank" rel="noopener">Ouvrir la plaquette (PDF) ↗</a>
+              </div>
+            </div>
+
+            <div class="auto-evaluation">
+              <p class="auto-evaluation__title">Auto-évaluation</p>
+              <div class="eval-item"><span class="niveau niveau--ok">Maîtrisé</span><p>InDesign et Photoshop appliqués à un document professionnel B2B : les exigences de précision et de cohérence y sont différentes d'une SAE&nbsp;; travail sous supervision itérative avec cycles de validation formels.</p></div>
+              <div class="eval-item"><span class="niveau niveau--progress">En cours d'acquisition</span><p>Autonomie dans un domaine technique inconnu : à ce stade, la supervision reste nécessaire pour valider que le fond est aussi juste que la forme.</p></div>
+              <div class="eval-item"><span class="niveau niveau--todo">Non encore maîtrisé</span><p>Indépendance éditoriale dans un domaine technique inconnu, et préparation pré-presse (gabarits CMJN, fonds perdus, spécifications d'impression) : deux compétences hors du périmètre du stage, à développer sur une commande réelle avec contrainte d'impression et accompagnement d'un imprimeur en amont de la livraison.</p></div>
+              <div class="eval-improve">
+                <p class="eval-improve__title">Axes de progression</p>
+                <p><strong>Pistes d'amélioration&nbsp;:</strong> développer une méthode d'appropriation documentaire du domaine avant de commencer la mise en page, pour éviter que des erreurs de fond soient masquées par une forme soignée&nbsp;; expérimenter la relecture technique croisée avec un expert métier avant validation finale par la hiérarchie.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mission 4 : Identité de marque NORGAARD -->
+        <article id="mission-norgaard" class="mission">
+          <div class="mission__rail">
+            <span class="mission__index">04</span>
+            <span class="mission__discipline">Identité de marque</span>
+            <dl class="mission__meta">
+              <div><dt>Cadre :</dt> <dd>SAE BUT MMI2 | S3, Design d'identité de marque</dd></div>
+              <div><dt>Rôle :</dt> <dd>Travail individuel</dd></div>
+            </dl>
+            <ul class="ac-list" aria-label="Apprentissages critiques démontrés">
+              <li><a class="ac-chip" href="#tableau-ac">AC23.01</a></li>
+            </ul>
+          </div>
+
+          <div class="mission__body">
+            <h3>Identité de marque fictive : NORGAARD</h3>
+
+            <div class="star-block">
+              <h4>Le brief initial</h4>
+              <p>Cette SAE portait sur la conception d'une identité de marque fictive complète. Le secteur était au choix. La marque créée, NORGAARD, se positionne dans l'univers des vêtements et accessoires de montagne haut de gamme, un secteur à forte culture visuelle où les marques de référence imposent des codes graphiques précis : sobriété, palette froide, typographie premium, rejet de l'exubérance décorative.</p>
+            </div>
+
+            <div class="star-block">
+              <h4>Objectifs et contraintes</h4>
+              <p>Construire une identité de marque de A à Z : analyse benchmark des marques de référence du secteur, logotype, déclinaison sur des supports fonctionnels (devis, factures fictifs), formalisation de la démarche dans un cahier des charges.</p>
+            </div>
+
+            <div class="star-block">
+              <h4>Stratégie et réalisation</h4>
+              <p>Le choix du secteur montagne haut de gamme n'était pas neutre : il imposait des contraintes créatives assumées dès le départ. Un positionnement haut de gamme outdoor exclut la fantaisie décorative, le gradient et la couleur saturée : la sobriété était un parti pris, pas une facilité. Cette logique a guidé l'ensemble des décisions graphiques.</p>
+              <p>Le travail a démarré par un benchmark de cinq à sept références premium du secteur (Norrøna, Arc'teryx, Fjällräven, Salewa, Mammut), analysées sur leurs codes visuels : palette, typographie, logotype, usage du blanc. Cette phase a permis d'identifier les invariants du positionnement ciblé et de définir un territoire graphique distinct sans imiter les références.</p>
+              <p>Le logotype NORGAARD a été conçu sous Adobe Illustrator. L'identité a ensuite été déclinée sur des supports fonctionnels fictifs : devis et factures aux normes de marque NORGAARD. Ce choix va plus loin qu'un simple rendu de logo : il teste la robustesse de l'identité sur des supports contraints (grilles tarifaires, mentions légales, hiérarchie fonctionnelle) plutôt que sur des mockups libres. L'ensemble de la démarche a été formalisé dans un cahier des charges.</p>
+              <p>La difficulté principale : maintenir la sobriété comme contrainte créative sans verser dans le générique. Chaque décision (espacement des lettres, graisse typographique, absence totale d'élément décoratif) devait être justifiable par rapport au positionnement haut de gamme outdoor ciblé.</p>
+            </div>
+
+            <div class="star-block">
+              <h4>Impact et retour d'expérience</h4>
+              <p>Logo NORGAARD livré. Documents fictifs de marque (devis, factures). Cahier des charges complet. Retour perçu : forte cohérence de marque. Livrable validé par l'équipe pédagogique lors de la soutenance.</p>
+
+              <div class="deliverable deliverable--identity">
+                <p class="deliverable__lead">Logotype</p>
+                <div class="identity-board identity-board--solo">
+                  <div class="identity-swatch identity-swatch--light">
+                    <img src="../travaux/NORGAARD/logo_norgaard_fond-transparent.png" alt="Logotype NORGAARD" loading="lazy" />
+                  </div>
+                </div>
+
+                <p class="deliverable__lead deliverable__lead--sub">Déclinaison sur supports fonctionnels</p>
+                <div class="gallery gallery--docs">
+                  <a class="gallery__item" href="../travaux/NORGAARD/devis.png" data-lightbox data-ph="Document indisponible" aria-label="Devis aux normes NORGAARD"><img src="../travaux/NORGAARD/devis.png" alt="Devis fictif appliquant l'identité NORGAARD" loading="lazy" onerror="this.closest('.gallery__item').classList.add('is-missing')" /></a>
+                  <a class="gallery__item" href="../travaux/NORGAARD/facture.png" data-lightbox data-ph="Document indisponible" aria-label="Facture aux normes NORGAARD"><img src="../travaux/NORGAARD/facture.png" alt="Facture fictive appliquant l'identité NORGAARD" loading="lazy" onerror="this.closest('.gallery__item').classList.add('is-missing')" /></a>
+                  <a class="gallery__item" href="../travaux/NORGAARD/Carte_de_visite_recto.png" data-lightbox data-ph="Document indisponible" aria-label="Carte de visite NORGAARD, recto"><img src="../travaux/NORGAARD/Carte_de_visite_recto.png" alt="Carte de visite NORGAARD — recto" loading="lazy" onerror="this.closest('.gallery__item').classList.add('is-missing')" /></a>
+                  <a class="gallery__item" href="../travaux/NORGAARD/Carte_de_visite_verso.png" data-lightbox data-ph="Document indisponible" aria-label="Carte de visite NORGAARD, verso"><img src="../travaux/NORGAARD/Carte_de_visite_verso.png" alt="Carte de visite NORGAARD — verso" loading="lazy" onerror="this.closest('.gallery__item').classList.add('is-missing')" /></a>
+                </div>
+                <a class="deliverable__cta" href="../travaux/NORGAARD/CAHIER_DES_CHARGES_NORGAARD.pdf" target="_blank" rel="noopener">Consulter le cahier des charges (PDF) ↗</a>
+              </div>
+            </div>
+
+            <div class="auto-evaluation">
+              <p class="auto-evaluation__title">Auto-évaluation</p>
+              <div class="eval-item"><span class="niveau niveau--ok">Maîtrisé</span><p>Démarche complète de construction d'une identité de marque (benchmark &rarr; positionnement &rarr; logotype &rarr; application)&nbsp;; cohérence de marque maintenue sur des supports de nature différente (logo graphique vs. documents fonctionnels).</p></div>
+              <div class="eval-item"><span class="niveau niveau--progress">En cours d'acquisition</span><p>Maîtrise d'Illustrator pour la construction de logotypes vectoriels : les courbes de Bézier et la gestion des espaces négatifs restent des compétences à consolider sur des projets plus complexes que ce logotype typographique.</p></div>
+              <div class="eval-improve">
+                <p class="eval-improve__title">Axes de progression</p>
+                <p><strong>À améliorer&nbsp;:</strong> structurer le benchmark de façon comparative et quantifiable (tableaux de positionnement, matrices de différenciation) plutôt que sous forme de moodboard ou d'analyse descriptive.</p>
+                <p><strong>Pistes d'amélioration&nbsp;:</strong> développer une version complète de la charte graphique (règles typographiques, déclinaisons couleurs, interdits) qui permette à un tiers de faire vivre l'identité sans accès au fichier source&nbsp;; confronter le logotype à des conditions extrêmes (très petit format, fond coloré, version monochrome) pour valider sa résistance avant livraison.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mission 5 : Dossier de presse Pop Smoke -->
+        <article id="mission-popsmoke" class="mission">
+          <div class="mission__rail">
+            <span class="mission__index">05</span>
+            <span class="mission__discipline">Communication éditoriale</span>
+            <dl class="mission__meta">
+              <div><dt>Cadre :</dt> <dd>SAE BUT MMI2 | S3, Communication éditoriale</dd></div>
+              <div><dt>Nature :</dt> <dd>Communication éditoriale</dd></div>
+              <div><dt>Rôle :</dt> <dd>Travail individuel</dd></div>
+            </dl>
+            <ul class="ac-list" aria-label="Apprentissages critiques démontrés">
+              <li><a class="ac-chip" href="#tableau-ac">AC23.01</a></li>
+            </ul>
+          </div>
+
+          <div class="mission__body">
+            <h3>Dossier de presse : Pop Smoke</h3>
+
+            <div class="star-block">
+              <h4>Le brief initial</h4>
+              <p>Dans le cadre d'une SAE de communication éditoriale, le brief consistait à produire un dossier de presse sur un artiste musical au choix. L'artiste retenu est Pop Smoke, rappeur américain de Brooklyn, figure centrale du courant New York drill, décédé en février 2020 à l'âge de 20 ans. Ce choix impliquait une contrainte immédiate : l'artiste ne pouvant plus s'exprimer, tous les contenus du dossier sont reconstitués depuis des sources existantes : interviews archivées, articles de presse, discographie disponible. Cette condition est assumée explicitement dans le document.</p>
+            </div>
+
+            <div class="star-block">
+              <h4>Ma mission</h4>
+              <p>Concevoir un dossier de presse complet respectant les conventions éditoriales du genre. Le dossier couvre dix sections : biographie, album de référence, focus track, vision fashion &amp; lifestyle, discographie, tournée, co-signs médias, revue de presse, statistiques et contacts. La mise en page devait refléter l'identité de l'artiste et soutenir la crédibilité du document.</p>
+            </div>
+
+            <div class="star-block">
+              <h4>Déploiement opérationnel</h4>
+              <p>Le premier travail a été de définir une direction artistique cohérente avec l'univers de Pop Smoke. La palette retenue (noir, or, argent, textes blancs) traduit la tension caractéristique de l'artiste entre l'esthétique de rue de Brooklyn et ses connexions au monde du luxe (présence aux défilés Dior, culture fashion du NY drill). Ce n'est pas une palette &laquo;&nbsp;sombre et luxueuse&nbsp;&raquo; générique : elle est justifiée par les codes visuels spécifiques de cet univers artistique.</p>
+              <p>La structure en dix sections suit la logique d'un dossier de presse professionnel : <strong>Biographie</strong> (King of New York), <strong>Album de référence</strong> (Meet The Woo 2), <strong>Focus track</strong> (Element), <strong>Vision</strong> (Fashion &amp; Lifestyle), <strong>Discographie</strong>, <strong>Tournée</strong>, <strong>Co-signs &amp; Radio</strong>, <strong>Presse</strong>, <strong>Stats</strong> (The Takeover), <strong>Contacts</strong> (Management &amp; PR). La section Contacts pour un artiste décédé est reconstituée d'après les structures en place au moment du décès (label, management) et présentée explicitement comme telle.</p>
+              <p>J'ai réalisé la mise en page sous InDesign en m'appuyant sur des gabarits (pages modèles), qui propagent les éléments récurrents et garantissent la cohérence visuelle sur les dix sections sans redéfinir chaque page individuellement.</p>
+              <p>Des photos de Pop Smoke sont intégrées dans le dossier. Les photographies sont issues de visuels promotionnels en libre accès. Un traitement colorimétrique sous Photoshop a été appliqué pour harmoniser les tons avec la palette noir&nbsp;/ or&nbsp;/ argent.</p>
+            </div>
+
+            <div class="star-block">
+              <h4>Bilan et livrables</h4>
+              <p>Dossier de presse complet en dix sections livré. Structure : biographie, album, focus track, vision, discographie, tournée, co-signs, presse, statistiques, contacts. Compétences validées lors de la soutenance SAE.</p>
+
+              <div class="deliverable deliverable--gallery">
+                <p class="deliverable__lead">Dossier de presse (planches)</p>
+                <div class="gallery">
+                  <a class="gallery__item" href="../travaux/dossier_presse_pop_smoke/1_ouverture.png" data-lightbox data-ph="Planche indisponible" aria-label="Planche — page d'ouverture"><img src="../travaux/dossier_presse_pop_smoke/1_ouverture.png" alt="Page d'ouverture — direction artistique noir, or et argent" loading="lazy" onerror="this.closest('.gallery__item').classList.add('is-missing')" /></a>
+                  <a class="gallery__item" href="../travaux/dossier_presse_pop_smoke/2_biographie.png" data-lightbox data-ph="Planche indisponible" aria-label="Planche — biographie"><img src="../travaux/dossier_presse_pop_smoke/2_biographie.png" alt="Page biographie — mise en page éditoriale" loading="lazy" onerror="this.closest('.gallery__item').classList.add('is-missing')" /></a>
+                  <a class="gallery__item" href="../travaux/dossier_presse_pop_smoke/3_album_Meet-the-who-2.png" data-lightbox data-ph="Planche indisponible" aria-label="Planche — album de référence"><img src="../travaux/dossier_presse_pop_smoke/3_album_Meet-the-who-2.png" alt="Page album de référence — Meet The Woo 2" loading="lazy" onerror="this.closest('.gallery__item').classList.add('is-missing')" /></a>
+                  <a class="gallery__item" href="../travaux/dossier_presse_pop_smoke/4_track_Element.png" data-lightbox data-ph="Planche indisponible" aria-label="Planche — focus track"><img src="../travaux/dossier_presse_pop_smoke/4_track_Element.png" alt="Page focus track — Element" loading="lazy" onerror="this.closest('.gallery__item').classList.add('is-missing')" /></a>
+                  <a class="gallery__item" href="../travaux/dossier_presse_pop_smoke/5_citations_avis.png" data-lightbox data-ph="Planche indisponible" aria-label="Planche — citations et revue de presse"><img src="../travaux/dossier_presse_pop_smoke/5_citations_avis.png" alt="Page citations et revue de presse" loading="lazy" onerror="this.closest('.gallery__item').classList.add('is-missing')" /></a>
+                  <a class="gallery__item" href="../travaux/dossier_presse_pop_smoke/6_chiffres_carriere.png" data-lightbox data-ph="Planche indisponible" aria-label="Planche — chiffres de carrière"><img src="../travaux/dossier_presse_pop_smoke/6_chiffres_carriere.png" alt="Page statistiques — chiffres de carrière" loading="lazy" onerror="this.closest('.gallery__item').classList.add('is-missing')" /></a>
+                </div>
+                <a class="deliverable__cta" href="../travaux/dossier_presse_pop_smoke/dossier_presse_pop_smoke.pdf" target="_blank" rel="noopener">Ouvrir le dossier complet (PDF) ↗</a>
+                <p class="deliverable__note">Cliquer pour agrandir une planche.</p>
+              </div>
+            </div>
+
+            <div class="auto-evaluation">
+              <p class="auto-evaluation__title">Auto-évaluation</p>
+              <div class="eval-item"><span class="niveau niveau--ok">Maîtrisé</span><p>Direction artistique cohérente et justifiée par l'univers de l'artiste (palette non arbitraire)&nbsp;; structure éditoriale d'un dossier de presse professionnel en dix sections&nbsp;; usage des gabarits InDesign pour cohérence visuelle sur un document multi-pages.</p></div>
+              <div class="eval-item"><span class="niveau niveau--progress">En cours d'acquisition</span><p>Reconstitution de contenus éditoriaux depuis des sources archivées : calibrer ce qui est vérifiable par rapport à ce qui relève de l'anecdote non sourcée&nbsp;; adapter le registre du dossier de presse entre exigence professionnelle et cadre académique.</p></div>
+              <div class="eval-item"><span class="niveau niveau--todo">Non maîtrisé</span><p>Gestion rigoureuse des droits des visuels de presse : les photographies ont été intégrées depuis des sources en accès libre sans vérification systématique des licences. Dans un contexte professionnel réel, cette approche ne serait pas acceptable. La remédiation passe par l'intégration d'une étape de recherche de droits dans la méthodologie de tout projet éditorial.</p></div>
+              <div class="eval-improve">
+                <p class="eval-improve__title">Axes de progression</p>
+                <p><strong>À améliorer&nbsp;:</strong> la section Contacts pour un artiste décédé gagnerait à être traitée plus explicitement comme une reconstitution fictionnelle assumée plutôt que comme une donnée de fait.</p>
+                <p><strong>Pistes d'amélioration&nbsp;:</strong> établir une méthode de vérification des sources pour les contenus biographiques reconstitués (distinguer fait vérifiable / anecdote non sourcée / citation authentifiée)&nbsp;; confronter la structure à des dossiers de presse réels du secteur musical indépendant pour mesurer l'écart avec les usages professionnels&nbsp;; approfondir le traitement photographique pour une cohérence chromatique systématique avec la palette or/argent/noir.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== TABLEAU AC ===================== -->
+    <section id="tableau-ac" class="section">
+      <div class="section__head">
+        <span class="section__num">Partie 02</span>
+        <h2>AC &amp; compétences</h2>
+        <p class="section__intro">Correspondance entre les apprentissages critiques du parcours SCN2D (BUT MMI2) et les réalisations de ce portfolio. Chaque réalisation renvoie à sa fiche analysée.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Code AC</th>
+              <th scope="col">Intitulé</th>
+              <th scope="col">Réalisation(s)</th>
+              <th scope="col">Niveau de maîtrise</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="ac-group-label" aria-hidden="true">
+              <td colspan="4">C1 : Comprendre les écosystèmes et les besoins</td>
+            </tr>
+            <tr>
+              <td data-label="Code AC" class="ac-code">AC21.01</td>
+              <td data-label="Intitulé">Analyser la stratégie de communication ou de marketing d'un acteur</td>
+              <td data-label="Réalisation(s)"><a href="#mission-emailing">Campagne e-mail TOESTY</a></td>
+              <td data-label="Niveau"><span class="tag tag--progress">En cours</span></td>
+            </tr>
+            <tr>
+              <td data-label="Code AC" class="ac-code">AC21.02</td>
+              <td data-label="Intitulé">Auditer une marque ou un service (positionnement, territoire graphique)</td>
+              <td data-label="Réalisation(s)"><a href="#mission-norgaard">Identité NORGAARD</a></td>
+              <td data-label="Niveau"><span class="tag tag--ok">Maîtrisé</span></td>
+            </tr>
+            <tr>
+              <td data-label="Code AC" class="ac-code">AC21.03</td>
+              <td data-label="Intitulé">Traiter des données avec des outils statistiques</td>
+              <td data-label="Réalisation(s)"><a href="#mission-dataviz">Site dataviz Spotify</a></td>
+              <td data-label="Niveau"><span class="tag tag--progress">En cours</span></td>
+            </tr>
+            <tr>
+              <td data-label="Code AC" class="ac-code">AC21.04</td>
+              <td data-label="Intitulé">Identifier et décrire les parcours clients</td>
+              <td data-label="Réalisation(s)"><a href="#mission-emailing">Campagne e-mail TOESTY</a></td>
+              <td data-label="Niveau"><span class="tag tag--progress">En cours</span></td>
+            </tr>
+            <tr>
+              <td data-label="Code AC" class="ac-code">AC21.05</td>
+              <td data-label="Intitulé">Cartographier les expériences utilisateur (points de contact, satisfaction)</td>
+              <td data-label="Réalisation(s)"><a href="#mission-dataviz">Site dataviz Spotify</a></td>
+              <td data-label="Niveau"><span class="tag tag--progress">En cours</span></td>
+            </tr>
+
+            <tr class="ac-group-label" aria-hidden="true">
+              <td colspan="4">C2 : Concevoir ou co-concevoir une réponse stratégique</td>
+            </tr>
+            <tr>
+              <td data-label="Code AC" class="ac-code">AC22.01</td>
+              <td data-label="Intitulé">Produire des recommandations ergonomiques (benchmark, cahier des charges)</td>
+              <td data-label="Réalisation(s)"><a href="#mission-norgaard">Identité NORGAARD</a>, <a href="#complements">Site Dune</a></td>
+              <td data-label="Niveau"><span class="tag tag--ok">Maîtrisé</span></td>
+            </tr>
+            <tr>
+              <td data-label="Code AC" class="ac-code">AC22.02</td>
+              <td data-label="Intitulé">Co-construire une recommandation stratégique (plan d'action)</td>
+              <td data-label="Réalisation(s)"><a href="#mission-popsmoke">Dossier de presse Pop Smoke</a>, <a href="#mission-marsup">Stage NOVIUM</a></td>
+              <td data-label="Niveau"><span class="tag tag--progress">En cours</span></td>
+            </tr>
+            <tr>
+              <td data-label="Code AC" class="ac-code">AC22.03</td>
+              <td data-label="Intitulé">Optimiser le référencement d'un site web ou d'un service</td>
+              <td data-label="Réalisation(s)"><a href="#mission-dataviz">Site dataviz Spotify</a>, <a href="#mission-emailing">Campagne TOESTY</a></td>
+              <td data-label="Niveau"><span class="tag tag--progress">En cours</span></td>
+            </tr>
+            <tr>
+              <td data-label="Code AC" class="ac-code">AC22.04</td>
+              <td data-label="Intitulé">Mettre en place une présence sur les médias numériques</td>
+              <td data-label="Réalisation(s)"><a href="#mission-popsmoke">Dossier Pop Smoke</a>, <a href="#mission-marsup">Plaquettes NOVIUM</a></td>
+              <td data-label="Niveau"><span class="tag tag--progress">En cours</span></td>
+            </tr>
+
+            <tr class="ac-group-label" aria-hidden="true">
+              <td colspan="4">C3 : Exprimer un message avec les médias numériques</td>
+            </tr>
+            <tr>
+              <td data-label="Code AC" class="ac-code">AC23.01</td>
+              <td data-label="Intitulé">Créer et décliner une identité visuelle et éditoriale transmédia</td>
+              <td data-label="Réalisation(s)"><a href="#mission-emailing">Campagne TOESTY</a>, <a href="#mission-marsup">Plaquette Marsup</a>, <a href="#mission-norgaard">Identité NORGAARD</a>, <a href="#mission-popsmoke">Dossier Pop Smoke</a></td>
+              <td data-label="Niveau"><span class="tag tag--ok">Maîtrisé</span></td>
+            </tr>
+
+            <tr class="ac-group-label" aria-hidden="true">
+              <td colspan="4">C4 : Développer pour le web et les médias numériques</td>
+            </tr>
+            <tr>
+              <td data-label="Code AC" class="ac-code">AC24.01</td>
+              <td data-label="Intitulé">Produire des interactions riches ou des dispositifs interactifs</td>
+              <td data-label="Réalisation(s)"><a href="#mission-dataviz">Site dataviz Spotify</a>, <a href="#mission-emailing">Campagne e-mail TOESTY</a>, <a href="#complements">Site Dune</a></td>
+              <td data-label="Niveau"><span class="tag tag--ok">Maîtrisé</span></td>
+            </tr>
+            <tr>
+              <td data-label="Code AC" class="ac-code">AC24.02</td>
+              <td data-label="Intitulé">Modéliser les traitements d'une application web (CMS, catalogue)</td>
+              <td data-label="Réalisation(s)"><a href="#mission-emailing">Campagne e-mail TOESTY</a></td>
+              <td data-label="Niveau"><span class="tag tag--progress">En cours</span></td>
+            </tr>
+            <tr>
+              <td data-label="Code AC" class="ac-code">AC24.03</td>
+              <td data-label="Intitulé">Optimiser les applications web (référencement, performance)</td>
+              <td data-label="Réalisation(s)"><a href="#mission-dataviz">Site dataviz Spotify</a></td>
+              <td data-label="Niveau"><span class="tag tag--progress">En cours</span></td>
+            </tr>
+            <tr>
+              <td data-label="Code AC" class="ac-code">AC24.04</td>
+              <td data-label="Intitulé">Configurer une solution d'hébergement adaptée</td>
+              <td data-label="Réalisation(s)"><a href="#mission-emailing">Campagne e-mail TOESTY</a></td>
+              <td data-label="Niveau"><span class="tag tag--progress">En cours</span></td>
+            </tr>
+
+            <tr class="ac-group-label" aria-hidden="true">
+              <td colspan="4">C5 : Entreprendre dans les industries créatives et les médias</td>
+            </tr>
+            <tr>
+              <td data-label="Code AC" class="ac-code">AC25.01</td>
+              <td data-label="Intitulé">Gérer un projet avec une méthode d'amélioration continue (agile)</td>
+              <td data-label="Réalisation(s)"><a href="#mission-marsup">Plaquette Marsup | Stage NOVIUM</a></td>
+              <td data-label="Niveau"><span class="tag tag--progress">En cours</span></td>
+            </tr>
+            <tr>
+              <td data-label="Code AC" class="ac-code">AC25.02</td>
+              <td data-label="Intitulé">Cartographier un écosystème (acteurs, propositions de valeur)</td>
+              <td data-label="Réalisation(s)"><a href="#mission-marsup">Plaquette Marsup | Stage NOVIUM</a></td>
+              <td data-label="Niveau"><span class="tag tag--progress">En cours</span></td>
+            </tr>
+            <tr>
+              <td data-label="Code AC" class="ac-code">AC25.03</td>
+              <td data-label="Intitulé">Initier la constitution d'un réseau professionnel</td>
+              <td data-label="Réalisation(s)"><a href="#mission-marsup">Plaquette Marsup | Stage NOVIUM</a></td>
+              <td data-label="Niveau"><span class="tag tag--progress">En cours</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===================== COMPLÉMENTS ===================== -->
+    <section id="complements" class="section">
+      <div class="section__head">
+        <span class="section__num">Partie 03</span>
+        <h2>Compléments</h2>
+        <p class="section__intro">Travaux complémentaires, présentés hors méthode STAR. Ils ne sont pas analysés comme des études de cas&nbsp;: ils illustrent l'étendue des pratiques abordées (maquette web, création graphique, photographie de produit) en marge des cinq réalisations principales.</p>
+      </div>
+
+      <div class="complements">
+
+        <div class="complements__group">
+          <p class="deliverable__lead">Maquette de site | Freeze Corleone</p>
+          <div class="gallery gallery--wide">
+            <a class="gallery__item" href="../travaux/maquette_site_freeze-corleone/1.png" data-lightbox data-ph="Visuel indisponible" aria-label="Maquette Freeze Corleone, écran 1"><img src="../travaux/maquette_site_freeze-corleone/1.png" alt="Maquette Freeze Corleone — écran 1" loading="lazy" onerror="this.closest('.gallery__item').classList.add('is-missing')" /></a>
+            <a class="gallery__item" href="../travaux/maquette_site_freeze-corleone/2.png" data-lightbox data-ph="Visuel indisponible" aria-label="Maquette Freeze Corleone, écran 2"><img src="../travaux/maquette_site_freeze-corleone/2.png" alt="Maquette Freeze Corleone — écran 2" loading="lazy" onerror="this.closest('.gallery__item').classList.add('is-missing')" /></a>
+            <a class="gallery__item" href="../travaux/maquette_site_freeze-corleone/3.png" data-lightbox data-ph="Visuel indisponible" aria-label="Maquette Freeze Corleone, écran 3"><img src="../travaux/maquette_site_freeze-corleone/3.png" alt="Maquette Freeze Corleone — écran 3" loading="lazy" onerror="this.closest('.gallery__item').classList.add('is-missing')" /></a>
+            <a class="gallery__item" href="../travaux/maquette_site_freeze-corleone/4.png" data-lightbox data-ph="Visuel indisponible" aria-label="Maquette Freeze Corleone, écran 4"><img src="../travaux/maquette_site_freeze-corleone/4.png" alt="Maquette Freeze Corleone — écran 4" loading="lazy" onerror="this.closest('.gallery__item').classList.add('is-missing')" /></a>
+          </div>
+        </div>
+
+        <div class="complements__group">
+          <p class="deliverable__lead">Design d'expérience et intégration du site Dune</p>
+          <div class="gallery gallery--wide">
+            <a class="gallery__item" href="../travaux/site_DUNE/1.jpeg" data-lightbox data-ph="Visuel indisponible" aria-label="Maquette Dune, écran 1"><img src="../travaux/site_DUNE/1.jpeg" alt="Maquette Dune — écran 1" loading="lazy" onerror="this.closest('.gallery__item').classList.add('is-missing')" /></a>
+            <a class="gallery__item" href="../travaux/site_DUNE/2.jpeg" data-lightbox data-ph="Visuel indisponible" aria-label="Maquette Dune, écran 2"><img src="../travaux/site_DUNE/2.jpeg" alt="Maquette Dune — écran 2" loading="lazy" onerror="this.closest('.gallery__item').classList.add('is-missing')" /></a>
+            <a class="gallery__item" href="../travaux/site_DUNE/3.jpeg" data-lightbox data-ph="Visuel indisponible" aria-label="Maquette Dune, écran 3"><img src="../travaux/site_DUNE/3.jpeg" alt="Maquette Dune — écran 3" loading="lazy" onerror="this.closest('.gallery__item').classList.add('is-missing')" /></a>
+<a class="gallery__item" href="../travaux/site_DUNE/5.jpeg" data-lightbox data-ph="Visuel indisponible" aria-label="Maquette Dune, écran 5"><img src="../travaux/site_DUNE/5.jpeg" alt="Maquette Dune — écran 5" loading="lazy" onerror="this.closest('.gallery__item').classList.add('is-missing')" /></a>
+          </div>
+        </div>
+
+        <div class="complements__group">
+          <p class="deliverable__lead">Pochette d'album | OCEAN BLEU</p>
+          <div class="gallery gallery--square">
+            <a class="gallery__item" href="../travaux/visuels/album_OCEAN_BLEU/ocean_bleu_pochette_base.png" data-lightbox data-ph="Visuel indisponible" aria-label="Pochette OCEAN BLEU, version de base"><img src="../travaux/visuels/album_OCEAN_BLEU/ocean_bleu_pochette_base.png" alt="Pochette OCEAN BLEU — version de base" loading="lazy" onerror="this.closest('.gallery__item').classList.add('is-missing')" /></a>
+            <a class="gallery__item" href="../travaux/visuels/album_OCEAN_BLEU/ocean_bleu_pochette_verte.png" data-lightbox data-ph="Visuel indisponible" aria-label="Pochette OCEAN BLEU, variante verte"><img src="../travaux/visuels/album_OCEAN_BLEU/ocean_bleu_pochette_verte.png" alt="Pochette OCEAN BLEU — variante verte" loading="lazy" onerror="this.closest('.gallery__item').classList.add('is-missing')" /></a>
+          </div>
+        </div>
+
+        <div class="complements__group">
+        <div class="complements__group">
+          <p class="deliverable__lead">Photographie | Parfum</p>
+          <div class="gallery gallery--frame">
+            <a class="gallery__item" href="../travaux/photos/packshot_parfum.JPG" data-lightbox data-ph="Visuel indisponible" aria-label="Packshot de parfum"><img src="../travaux/photos/packshot_parfum.JPG" alt="Packshot — parfum" loading="lazy" onerror="this.closest('.gallery__item').classList.add('is-missing')" /></a>
+            <a class="gallery__item" href="../travaux/photos/packshot_graphique_parfum.png" data-lightbox data-ph="Visuel indisponible" aria-label="Packshot graphique de parfum"><img src="../travaux/photos/packshot_graphique_parfum.png" alt="Packshot graphique — parfum" loading="lazy" onerror="this.closest('.gallery__item').classList.add('is-missing')" /></a>
+          </div>
+        </div>
+
+        <div class="complements__group">
+          <p class="deliverable__lead">Photographie | Pompe à vélo</p>
+          <div class="gallery gallery--frame">
+            <a class="gallery__item" href="../travaux/photos/packshot_pompe_a_velo.png" data-lightbox data-ph="Visuel indisponible" aria-label="Packshot de pompe à vélo"><img src="../travaux/photos/packshot_pompe_a_velo.png" alt="Packshot — pompe à vélo" loading="lazy" onerror="this.closest('.gallery__item').classList.add('is-missing')" /></a>
+            <a class="gallery__item" href="../travaux/photos/mise_en_situation_pompe_a_velo.png" data-lightbox data-ph="Visuel indisponible" aria-label="Mise en situation d'une pompe à vélo"><img src="../travaux/photos/mise_en_situation_pompe_a_velo.png" alt="Mise en situation — pompe à vélo" loading="lazy" onerror="this.closest('.gallery__item').classList.add('is-missing')" /></a>
+          </div>
+        </div>
+
+        <p class="complements__doc"><a class="deliverable__cta" href="../travaux/Dossier_culture_artistique/Dossier_culture_artistique.pdf" target="_blank" rel="noopener">Dossier de culture artistique (PDF) ↗</a></p>
+
+      </div>
+    </section>
+
+    <!-- ===================== BILAN ===================== -->
+    <section id="bilan" class="section">
+      <div class="section__head">
+        <span class="section__num">Partie 04</span>
+        <h2>Bilan et évolution</h2>
+      </div>
+      <p>Entre MMI1 et MMI2, ce qui a changé n'est pas dans les outils. En première année, j'apprenais à maîtriser InDesign, à structurer un HTML, à livrer selon un brief. Cette année, la question que je me suis posée en premier était différente. Par exemple, pour la dataviz Spotify, j'ai formulé une question analytique avant d'ouvrir Plotly. Raisonner avant d'exécuter : c'est ça, le vrai changement.</p>
+
+      <p>Le stage chez NOVIUM a été l'épreuve que les SAE ne donnent pas. Huit semaines à refaire les plaquettes techniques d'un constructeur d'engins ferroviaires, dans un domaine que je ne connaissais pas. Le premier obstacle n'était pas graphique : il fallait comprendre ce qu'est une nacelle automotrice, distinguer les données de performance des données de sécurité, identifier ce qu'un opérateur ferroviaire cherche dans un document. La supervision de Marie-Julie Clar était nécessaire et je l'assume dans l'auto-évaluation. Ce que j'y ai appris, c'est la frontière entre maîtriser la mise en page et maîtriser le fond.</p>
+
+      <p>En regardant les cinq missions ensemble, ce qui ressort c'est la capacité à justifier les choix, pas seulement à les faire. La palette de TOESTY n'est pas juste "beige et humoristique" : elle découle d'un positionnement pensé pour libérer le copywriting dans le cadre contraint d'un brief e-commerce. La palette Pop Smoke (noir, or, argent) traduit une tension concrète entre l'esthétique de rue de Brooklyn et les connexions au monde du luxe. Ce n'est plus de l'intuition, c'est de la méthode.</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <span>Timothé Roberjot &middot; BUT MMI2 &middot; 2024&ndash;2026</span>
+      <a class="to-top" href="#introduction">Haut de page ↑</a>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

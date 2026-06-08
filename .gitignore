@@ -1,0 +1,10 @@
+CLAUDE.md
+contexte.md
+todo.md
+plan.md
+tasks.md
+*.archived.md
+.DS_Store
+.claude/
+prompt.txt
+infos_travaux.txt
